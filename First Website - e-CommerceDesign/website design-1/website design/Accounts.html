@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Account - bitware - buy pc hard ware, latest pc hardware, upcoming pc hardware and exclusive offers for pc hardware </title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" rel="stylesheet"> 
+<link href="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+	
+	<!------------- navbar ----------------->
+	
+	 <div class="container">
+		<div class="navbar">
+		<div class"logo">
+			<a href="index.html"><img src="images/logo.png" width="125px"></a>
+		</div>
+		<nav>
+			<ul id="MenuItems">
+				<li><a href="index.html">Home</a></li>
+				<li><a href="products.html">Products</a></li>
+				<li><a href="about.html">About</a></li>
+				<li><a href="contact.html">Contact</a></li>
+				<li><a href="Accounts.html">Account</a></li>
+			</ul>	
+		</nav>	
+		 <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>	
+		 <img src="images/menu.png"  class="menu-icon" onclick="menutoggle()">	
+	  </div>
+	  
+	 </div>
+	
+	<div class="banner">
+				<img class="banner-images" src="images/Untitled-5.jpg">
+		 </div>
+	
+	<!---------------Account page ------------->
+		
+		<div class="account-page">
+			<div class="container">
+				<div class="row">
+					<div class="col-2">
+						<img src="images/image-1.png" width="100%" >
+					</div>
+					<div class="col-2">
+						<div class="form-container">
+							<div class="form.btn">
+								<span onclick="login()">Login</span>
+								<span onclick="register()">Register</span>
+								<hr id="Indicator">
+							</div>
+							
+							<form id="LoginForm">
+								<input type="text" placeholder="Username">
+								<input type="password" placeholder="Password">
+								<button type="submit" class="btn">Login</button>
+								<a href="">Forgot password</a>
+							
+							</form>
+							
+							<form id="RegForm">
+								<input type="text" placeholder="Username">
+								<input type="email" placeholder="Email">
+								<input type="password" placeholder="Password">
+								<button type="submit" class="btn">Register</button>								
+							
+							</form>
+						</div>
+						
+					</div>
+					
+				</div>
+			</div>
+		
+		</div>
+
+
+<!---------- footer-------->
+			
+			<div class= "footer">
+				<div class="container">
+					<div class="row">
+						<div class="footer-col-1">
+							<h3> Download OUR APP </h3>
+							<div class="app-logo">
+							<img src="images/logo-app-stores.png">
+					
+							<p>Download OUR APP for Andriod and IOS. </p>
+							</div>
+						</div>
+						<div class="footer-col-3">
+							<h3>Useful Links</h3>
+							<ul>
+								<li>Coupons</li>
+								<br>
+								<li>Blog Post</li>
+								<br>
+								<li>Return Policy</li>
+								<br>
+								<li>Join Affiliate</li>
+							</ul>
+						
+						</div>	
+							<div class="footer-col-4">
+							<h3>Follow us</h3>
+							<ul>
+								<a href="https://www.facebook.com/"><li>Facebook</li> <i class = "fa fa-facebook"></i>
+								<a href="https://twitter.com/?lang=en-gb"><li>twitter</li> <i class = "fa fa-twitter"></i>
+								<a href="https://www.instagram.com/"><li>Instagram</li> <i class = "fa fa-instagram"></i> 
+								<a href="https://www.youtube.com/"><li>Youtube</li> <i class = "fa fa-youtube"></i>
+							</ul>
+						
+						</div>		
+					</div>
+					<hr>
+					<p class="copyright">Copyright 2021 Bitware</p>
+				</div>
+			</div>
+			
+			<!---------------js for toggle menu------------->
+			<script>
+			var MenuItems =  document.getElementById("MenuItems");
+			
+			MenuItems.style.maxHeight = "0px";
+			
+			function menutoggle(){
+				if (MenuItems.style.maxHeight == "0px"){
+					MenuItems.style.maxHeight = "200px";
+				}
+				else {
+					MenuItems.style.maxHeight = "0px";
+				}
+				
+			}
+			</script>
+			
+			<!---------------js for toggle form------------->
+			<script>
+			var LoginForm = document.getElementById("LoginForm");
+			var RegForm = document.getElementById("RegForm");
+			var Indicator = document.getElementById("Indicator");
+			
+				function register(){
+					
+					RegForm.style.transform = "translateX(00px)";
+					LoginForm.style.transform = "translateX(00px)";
+					Indicator.style.transform = "translateX(100px)";
+				}
+				function login(){
+					
+					RegForm.style.transform = "translatexX(300px)";
+					LoginForm.style.transform = "translateX(300px)";
+					Indicator.style.transform = "translateX(100px)";
+				}
+			
+			</script>
+			
+			
+			
+			
+			
+			
+</body>
+</html>

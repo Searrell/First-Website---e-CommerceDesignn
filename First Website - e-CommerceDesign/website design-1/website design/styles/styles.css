@@ -1,0 +1,230 @@
+@charset "utf-8";
+/* Defines the character set for this CSS Document */
+
+body {margin:0; padding:0;font-family: 'Open Sans', sans-serif;}
+
+
+h1, h2, h3, h4, h5, h6 {font-family: 'Bitter', serif; color:#800000;/*all headings will be displayed as Bitter font and will be maroon*/}
+
+.container{width:80%; margin:0 auto; /* this makes the width of the div container 80% of the browser window, sets the margin to 0 and centres the container in the browser*/} 
+
+
+
+.banner{width:100%; /*this makes the banner div 100% width of the container*/
+} 
+
+nav {
+	height: 70px; /* This gives a height to the nav div area */
+	width: 100%; /* This ensures a full - width of the container */
+	background: #262626; /* The background colour which should be a dark gray */
+	font-size: 11pt; /* The font size for the text in the nav div area */
+	top: 0; /* Ensures the navigation area begins at the top left */	
+}
+
+nav ul {
+	margin: 0; /* positions the unordered list within the nav div to the top left */ 
+	height: 50px; /* Gives the unordered list a height of 50px */
+
+
+}
+nav li {
+	display: inline; /* ensures list items display in a line rather than above each other */
+}
+
+nav a:link {
+	color: #fff; /* colours the unvisited link text white */
+	display: inline-block; /*Displays an element as an inline-level block container. The inside of this block is formatted as block-level box, and the element itself is formatted as an inline-level box */
+	width: 100px; /* */
+	text-align: center; /* centers the link within it's container*/
+	text-decoration: none; /*removes the default underline*/
+	padding:24px 0; /*adds padding around the link*/
+	font-weight:600; /*adds a font weight to the item*/
+	border-right: 1px solid #2e2e2e;/*adds a grey divider to the right side of the link*/
+}
+
+nav a:hover {background:#2e2e2e; /*changes the background colour of the link to lighter grey when the mouse hovers over it*/}
+
+
+nav a#pull {
+	display: none;
+}/*this hides the 'menu' text when viewed on a desktop browser*/
+
+.nav-logo {
+	float:left; /*floats the logo container to the left*/
+	display:block; /*displays each list item as a separate block*/
+	padding:5px 0 0 1px; /*top padding will be 5px, right padding will be 0px, bottom padding will be 0 px, left padding will be 1px*/
+	border:none;/*makes sure the default blue border is not placed around the image when image is a link*/
+}
+
+.nav-logo img{width:60px; height:auto;}/*gives a width to the logo image*/
+
+
+
+
+/* Two column layout styles */
+.article-half-left{width:47%;
+float:left;
+margin-right:2%;
+margin-top:20px;
+padding:5px;}
+
+.article-half-right{width:49%;
+float:left;
+margin-top:20px;
+margin-bottom:10px;
+}
+
+/*three column layout style*/
+.article-third-left {width:30%; /* the width will be 30% of the container*/
+float:left; /*floats the container to the left*/
+margin-right:5%; /*margin on the right will be 5%*/
+margin-top:20px;}/*margin on the top will be 20px*/
+
+.article-third-right {width:30%;
+float:left;
+margin-top:20px;
+}
+
+
+img {width:100%; height: auto;}
+
+.footer {width:97%; padding:20px; background-color:#262626; color:#FFF; font-size:12px;}
+.footer h3 {color:#fff;}
+
+/*  ====== Form Styles ======  */
+
+input, textarea {
+	padding: 10px;
+	border: 1px solid #E5E5E5;
+	width: 60%;
+	color: #999999;
+	box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	-moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 8px
+	;
+	font-size:0.8em;		
+}
+
+textarea {
+	width: 80%;
+	height: 150px;
+	max-width: 80%;
+	line-height: 18px;
+}
+
+input:hover, textarea:hover,
+input:focus, textarea:focus {
+	border-color: 1px solid #C9C9C9;
+	-moz-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+	-webkit-box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 8px;
+}
+
+.form label {
+	margin-left: 10px;
+	color: #999999;
+	font-size:0.8em;
+}
+
+
+.submit input {
+	width: 50px; 
+	height: 40px;
+	background-color: #3082ff; 
+	color: #FFF;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+video {
+            max-width: 100%;
+            height: auto;
+          }
+
+          iframe,
+          embed,
+          object {
+            max-width: 100%;
+          }
+.map-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+}
+
+.map-container iframe,   
+.map-container object,  
+.map-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+/*Column styles to be applied to a maximum display of 500px*/
+
+@media screen and (max-width: 500px) {
+		
+.article-half-left{width:100%; margin-top:20px;}
+.article-half-right{width:100%; margin-top:20px;}		
+.article-third-left{width:100%; margin-top:20px;}
+.article-third-right{width:100%;margin-top:20px;}
+.article-two-third {width:100%;margin-top:20px;}
+.article-quarter-left{width:100%;margin-top: 20px;}
+.article-quarter-right{width:100%;margin-top: 20px;}
+}
+
+/*Navigation styles - these new navigation styles will change how the navigation menu looks when viewed on a mobile screen. The links will be hidden until the ‘Menu’ link is clicked. The links will then drop down and will no longer be placed inline but below each other.
+*/
+nav {
+		width: 100%;
+		height: auto;
+		border-bottom: 0;
+		background-size:45px 49px;
+	}
+	nav ul {
+		display: none;
+		height: auto;
+	
+	}
+	
+	nav li {
+		width: 100%;
+		float: left;
+		position: relative;
+		border-bottom: 1px solid #2e2e2e;
+		padding-top:0px;
+		float: left;
+  	}
+
+  	nav a {
+	  	text-align: left;
+	  	width: 100%;
+	  	text-indent: 5px;
+		background: #262626;
+		padding:10px 0;	  	
+  	}
+  	
+  	nav a:hover {
+	  	background:#444;
+  	}  	
+	
+	nav a#pull {
+		display: block;
+		background-color: #262626;
+		width: 100%;
+		position: relative;
+	}
+	nav a#pull:after {
+		width: 30px;
+		height: 30px;
+		color: #FFF;
+		display: inline-block;
+		position: absolute;
+		right: 15px;
+		top: 10px;}
+
+}
